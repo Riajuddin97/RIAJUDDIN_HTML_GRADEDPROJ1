@@ -1,0 +1,268 @@
+/* styles for home page body*/
+ body {
+     background-color: rgb(187, 187, 255);
+     background-image: url(images/Animation/ani1.jpg);
+     background-position: center;
+     background-blend-mode: overlay;
+     position: relative;
+ }
+
+ /* styles for home page header */
+ header h1 {
+     font-weight: bolder;
+     color: rgb(243, 239, 239);
+     font-size: 45px;
+     text-align: center;
+     padding: 10px;
+     background-color: rgb(11, 0, 109);
+ }
+
+ /* styles for home page head */
+ h1 {
+     text-shadow: 2px 1px #000000bd;
+ }
+
+/* styles for homepage footer*/
+ footer {
+     background-color: rgb(11, 0, 109);
+     color: rgb(255, 234, 0);
+     font-size: 16px;
+     padding: 10px;
+     position: relative;
+     margin-top: 3px;
+     bottom: 0%;
+     text-align: left;
+     text-shadow: 1px 1px #000000bd;
+ }
+
+ /* styles for navigation bar */
+ #navigate {
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0%;
+     z-index: 1;
+     margin-bottom: 3px;
+ }
+
+ /* styles for navigation menu */
+ .menu {
+     margin: 0%;
+     background-color: rgb(65, 74, 177);
+ }
+
+ 
+ /* anchor tag styles*/
+ .menu li a {
+     color: rgb(255, 255, 255);
+     font-size: 20px;
+     text-decoration: none;
+ }
+
+ /* li styles*/
+ .menu li {
+     padding: 10px;
+     display: inline-block;
+ }
+
+ /* hover styles for meny list items */
+ .menu li:hover {
+     background-color: rgba(0, 0, 89, 0.844);
+     ;
+ }
+
+ /* Li items arrangement styles*/
+ .menu li:nth-child(2):hover #ourmedicines,
+ .menu li:nth-child(3):hover #healthcare {
+     display: block;
+ }
+
+ /* styles for navigation menu list items */
+ #ourmedicines,
+ #healthcare {
+     position: absolute;
+     width: auto;
+     max-width: 150px;
+     display: none;
+     top: 40px;
+     background-color: rgba(38, 42, 140, 0.886);
+     padding: 0%;
+ }
+
+ /* un-ordered list li styles*/
+ #ourmedicines li,
+ #healthcare li {
+     display: block;
+ }
+
+ /* ul li Hover styles */
+ #ourmedicines li:hover,
+ #healthcare li:hover {
+     background-color: rgba(25, 28, 103, 0.886);
+ }
+
+ /* anchor tag styles with in sub menu */
+ #ourmedicines li a,
+ #healthcare li a {
+     color: rgb(255, 255, 255);
+     font-size: 16px;
+ }
+
+ /* styles for li menu last li item */
+ .menu li:nth-last-child(1) {
+     float: right;
+ }
+
+
+/* home page images animation styles */
+ #animation {
+     position: relative;
+     margin-bottom: 3px;
+     height: 450px;
+     animation-name: animation;
+     animation-duration: 30s;
+     animation-direction: alternate;
+     animation-iteration-count: infinite;
+     border: 3px solid rgb(1, 87, 121);
+     border-radius: 25px;
+ }
+
+ /* Animation keyfames */
+ @keyframes animation {
+     0% {
+         background-image: url(images/Animation/ani1.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+
+     25% {
+         background-image: url(images/Animation/ani2.png);
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+
+     50% {
+         background-image: url(images/Animation/ani3.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+
+     70% {
+         background-image: url(images/Animation/ani4.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+
+     100% {
+         background-image: url(images/Animation/ani5.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+
+ }
+
+ /* Advertisement styles*/
+ #covidcare, #diabetescare {
+     border: 3px solid rgb(1, 87, 121);
+     border-radius: 25px;
+     background-color: rgb(187, 229, 255);
+     margin: 3px;
+     padding: 3px;
+     position: relative;
+ }
+
+ /* advertisment styles for heads */
+ #covidcare ul h2, #diabetescare ul h2 {
+     margin: 1px;
+     color: rgb(2, 0, 91);
+     font-size: xx-large;
+     text-align: center;
+     font-family:Arial;
+     text-decoration: underline;
+     text-shadow: 0 0 5px rgba(255, 255, 255, 0.536);
+     margin-bottom: 30px;
+ }
+
+ /* hover style for advertisement headline */
+ #covidcare ul h2:hover, #diabetescare ul h2:hover {
+     color: rgb(0, 38, 255);
+ }
+
+ /* Advertisment styles for Un-ordered list  */
+ #covidcare ul, #diabetescare ul {
+     padding: 10px;
+     margin: 1px;
+ }
+
+ /* Advertisemnent styles for li items */
+ #covidcare ul li, #diabetescare ul li {
+     margin: 0px 50px;
+     display: inline-block;
+     position: relative;
+ }
+
+ /* Styles for advertisement */
+ #covidcare h3, #diabetescare h3 {
+     margin: 15px;
+     color: blue;
+     text-align: center;
+     font-size: x-large;
+ }
+
+ /* advertisement paragraph styles */
+ #covidcare p, #diabetescare p {
+     margin: 5px;
+ }
+
+ /* advertisement all article styles */
+ #covidcare article, #diabetescare article {
+     border-radius: 15px;
+ }
+
+ /* styles for  articles with in ul-li */
+ #covidcare ul li article, #diabetescare ul li article {
+     padding: 5px;
+     display: inline-block;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ }
+
+ /* styles for images with in li*/
+ #covidcare ul li article img, #diabetescare ul li article img {
+     width: 200px;
+     height: 160px;
+     display: block;
+     border: 1px solid rgb(1, 87, 121);
+ }
+
+ /* advertisement image hover styles */
+ #covidcare img:hover,
+ #diabetescare img:hover {
+     transform: scale(1.2);
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ }
+
+ /* advertisement bbutton styles */
+ #covidcare button, #diabetescare button {
+     width: 120px;
+     height: 35px;
+     padding: 5px;
+     text-align: center;
+     font-size: 16px;
+     font-weight: bold;
+     border-radius: 10px;
+     background-color: rgba(41, 144, 208, 0.721);
+     color: rgb(0, 0, 0);
+ }
+
+ /* advertisement button hover styles for li */
+ #CovidCare li:focus, #DiabetesCare li:focus {
+     background-color: rgb(250, 234, 230);
+     border: 5px solid rgb(0, 255, 76);
+     border-radius: 25px;
+ }
+
+ /* advertisememt button hover styles for li articles */
+ #covidcare li:active, #diabetescare li:active {
+     background-color: rgb(250, 234, 230);
+     border: 5px solid rgb(0, 255, 76);
+     border-radius: 25px;
+ }
